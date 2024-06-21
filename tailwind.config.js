@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        '900': '900px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         'dark-blue': 'hsl(213, 19%, 18%)',
         'very-dark-blue': 'hsl(216, 12%, 8%)',
