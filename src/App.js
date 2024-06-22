@@ -10,31 +10,37 @@ export default function App() {
 
 function Rating() {
   return (
-    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/3 bg-dark-blue w-1/4 rounded-2xl p-8">
-      <div className='bg-small-dark-blue rounded-full flex justify-center items-center w-12 h-12'>
-        <img src={iconStar} alt='star-icon'></img>
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-dark-blue w-1/4 rounded-2xl p-8">
+      <div className="bg-small-dark-blue rounded-full flex justify-center items-center w-12 h-12">
+        <img src={iconStar} alt="star-icon"></img>
       </div>
-      <h1 className='font-bold text-white text-sm 900:text-2xl'>How did we do?</h1>
-      <p className='font-normal text-light-grey text-sm'>
-      Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-      </p>
-      <div className='flex justify-between mt-6'>
-        <RateNumbers>1</RateNumbers>
-        <RateNumbers>2</RateNumbers>
-        <RateNumbers>3</RateNumbers>
-        <RateNumbers>4</RateNumbers>
-        <RateNumbers>5</RateNumbers>
-      </div>
-      <button className='font-bold bg-orange py-2 rounded-3xl w-full mt-6'>SUBMIT</button>
+      <article className='flex flex-col gap-5 mt-6'>
+        <h1 className="font-bold text-white text-sm 900:text-custom-1.5rem">
+          How did we do?
+        </h1>
+        <p className="font-normal text-light-grey text-sm">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div className="flex justify-between">
+          <RateNumbers>1</RateNumbers>
+          <RateNumbers>2</RateNumbers>
+          <RateNumbers>3</RateNumbers>
+          <RateNumbers>4</RateNumbers>
+          <RateNumbers>5</RateNumbers>
+        </div>
+        <button className="font-bold bg-orange hover:bg-white hover:cursor-pointer ease-in-out duration-300 py-2 rounded-3xl w-full">
+          SUBMIT
+        </button>
+      </article>
     </section>
-  )
+  );
 }
 
-function RateNumbers({children}) {
+function RateNumbers({ children }) {
   return (
-    <div className='bg-small-dark-blue flex justify-center items-center text-light-grey rounded-full w-12 h-12'>
+    <div className="bg-small-dark-blue flex justify-center items-center text-light-grey rounded-full w-12 h-12 hover:bg-orange hover:cursor-pointer ease-in-out duration-300 hover:text-black font-bold">
       {children}
     </div>
-  )
+  );
 }
-

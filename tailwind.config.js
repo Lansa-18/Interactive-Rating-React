@@ -31,6 +31,9 @@ module.exports = {
       fontFamily: {
         overpass: ['Overpass', 'sans-serif'],
       },
+      fontSize: {
+        'custom-1.5rem': '1.5rem', // Custom font size
+      },
     },
   },
   plugins: [],
