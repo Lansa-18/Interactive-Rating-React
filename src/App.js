@@ -57,7 +57,7 @@ function ThankYou() {
         <article className='bg-[#262E38] text-orange py-1 px-5 w-[70%] rounded-2xl mt-[32px]'>You selected X out of Y</article>
         <h3 className='mt-[32px] mb-[7px] text-3xl font-bold'>Thank You!</h3>
         <p className='text-sm text-light-grey font-normal'>
-          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+          We appreciate you taking the time to give a rating. If you eve need more support, don't hesitate to get in touch!
         </p>
       </div>
     </section>
