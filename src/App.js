@@ -49,14 +49,14 @@ function RateNumbers({ children }) {
 
 function ThankYou() {
   return (
-    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl py-8">
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl p-8">
       <div className='flex justify-center items-center'>
-        <img className='w-[40%]' src={iconThankYou} alt="icon-thankyou"></img>
+        <img className='w-[45%]' src={iconThankYou} alt="icon-thankyou"></img>
       </div>
       <div className='text-white flex flex-col text-center items-center'>
-        <article className='bg-[#262E38] text-orange py-1 px-5 w-[60%] rounded-2xl'>You selected X out of Y</article>
-        <h3>Thank You!</h3>
-        <p>
+        <article className='bg-[#262E38] text-orange py-1 px-5 w-[70%] rounded-2xl mt-[32px]'>You selected X out of Y</article>
+        <h3 className='mt-[32px] mb-[7px] text-3xl font-bold'>Thank You!</h3>
+        <p className='text-sm text-light-grey font-normal'>
           We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
         </p>
       </div>
