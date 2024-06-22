@@ -1,20 +1,22 @@
 import iconStar from './images/icon-star.svg';
+import iconThankYou from './images/illustration-thank-you.svg';
 
 export default function App() {
   return (
     <div className="bg-very-dark-blue h-screen font-overpass">
-      <Rating />
+      {/* <Rating /> */}
+      <ThankYou />
     </div>
   );
 }
 
 function Rating() {
   return (
-    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-dark-blue w-1/4 rounded-2xl p-8">
-      <div className="bg-small-dark-blue rounded-full flex justify-center items-center w-12 h-12">
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl p-8">
+      <div className="bg-[#262E38] rounded-full flex justify-center items-center w-12 h-12">
         <img src={iconStar} alt="star-icon"></img>
       </div>
-      <article className='flex flex-col gap-5 mt-6'>
+      <article className="flex flex-col gap-5 mt-6">
         <h1 className="font-bold text-white text-sm 900:text-custom-1.5rem">
           How did we do?
         </h1>
@@ -39,8 +41,25 @@ function Rating() {
 
 function RateNumbers({ children }) {
   return (
-    <div className="bg-small-dark-blue flex justify-center items-center text-light-grey rounded-full w-12 h-12 hover:bg-orange hover:cursor-pointer ease-in-out duration-300 hover:text-black font-bold">
+    <div className="bg-[#262E38] flex justify-center items-center text-light-grey rounded-full w-12 h-12 hover:bg-orange hover:cursor-pointer ease-in-out duration-300 hover:text-black font-bold">
       {children}
     </div>
+  );
+}
+
+function ThankYou() {
+  return (
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl py-8">
+      <div className='flex justify-center items-center'>
+        <img className='w-[40%]' src={iconThankYou} alt="icon-thankyou"></img>
+      </div>
+      <div className='text-white flex flex-col text-center items-center'>
+        <article className='bg-[#262E38] text-orange py-1 px-5 w-[60%] rounded-2xl'>You selected X out of Y</article>
+        <h3>Thank You!</h3>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </section>
   );
 }
