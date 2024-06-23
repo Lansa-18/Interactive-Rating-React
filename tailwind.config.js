@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        phone: { max: '35.999em' }, // 575px
+        phone: { max: '35.999em' }, 
         'land-phone': { max: '47.999em' }, // 768px
         'tab-port': { max: '61.999em' }, // 992px
         'tab-land': { max: '74.999em' }, // 1200px
+        laptop: { max: '80em' }, // 1280px
         'big-desktop': { max: '87.499em' }, // 1400px
       },
       colors: {

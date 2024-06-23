@@ -14,7 +14,7 @@ export default function App() {
 
 function Rating({ onSetSubmit, rate, onSetRate }) {
   function handleSubmit() {
-    rate >=1 && onSetSubmit(true);
+    rate >=1 ? onSetSubmit(true) : alert('Please select a rating');
   }
 
   return (
