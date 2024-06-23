@@ -18,15 +18,15 @@ function Rating({ onSetSubmit, rate, onSetRate }) {
   }
 
   return (
-    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl p-8">
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-[18%] bg-custom-radial w-1/4 custom-680:min-w-[325px] land-phone:w-[47%] custom-915:w-[42%] custom-1100:w-[35%] laptop:w-[30%] rounded-2xl p-8">
       <div className="bg-[#262E38] rounded-full flex justify-center items-center w-12 h-12">
         <img src={iconStar} alt="star-icon"></img>
       </div>
       <article className="flex flex-col gap-5 mt-6">
-        <h1 className="font-bold text-white text-sm text-[28px]">
+        <h1 className="font-bold text-white text-[28px] tab-port:text-[22px]">
           How did we do?
         </h1>
-        <p className="font-normal text-light-grey text-sm">
+        <p className="font-normal text-light-grey text-sm tab-port:text-[12px]">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
@@ -60,14 +60,14 @@ function RateNumbers({ children, rate, onSetRate }) {
 
 function ThankYou({rate}) {
   return (
-    <section className="absolute left-1/2 transform -translate-x-1/2 top-1/4 bg-custom-radial w-1/4 rounded-2xl p-8">
+    <section className="absolute left-1/2 transform -translate-x-1/2 top-[18%] bg-custom-radial w-1/4 rounded-2xl p-8 custom-680:min-w-[325px] land-phone:w-[45%] custom-915:w-[40%] custom-1100:w-1/3 laptop:w-[30%]">
       <div className='flex justify-center items-center'>
         <img className='w-[45%]' src={iconThankYou} alt="icon-thankyou"></img>
       </div>
       <div className='text-white flex flex-col text-center items-center'>
-        <article className='bg-[#262E38] text-orange py-1 px-5 w-[85%] rounded-2xl mt-[32px]'>You selected {rate} out of 5</article>
+        <article className='bg-[#262E38] text-orange py-1 px-5 w-full rounded-2xl text-sm mt-[32px]'>You selected {rate} out of 5</article>
         <h3 className='mt-[32px] mb-[7px] text-3xl font-bold'>Thank You!</h3>
-        <p className='text-sm text-light-grey font-normal'>
+        <p className='text-sm text-light-grey font-normal laptop:text-[12px]'>
           We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
         </p>
       </div>

@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        phone: { max: '35.999em' }, 
-        'land-phone': { max: '47.999em' }, // 768px
-        'tab-port': { max: '61.999em' }, // 992px
-        'tab-land': { max: '74.999em' }, // 1200px
-        laptop: { max: '80em' }, // 1280px
         'big-desktop': { max: '87.499em' }, // 1400px
+        laptop: { max: '80em' }, // 1280px
+        'tab-land': { max: '74.999em' }, // 1200px
+        'custom-1100': { max: '68.749em' }, // 1100px
+        'tab-port': { max: '61.999em' }, // 992px
+        'custom-915': { max: '57.187em' }, // 915px
+        'land-phone': { max: '47.999em' }, // 768px
+        'custom-680': { max: '42.499em' }, // 680px
+        phone: { max: '35.999em' }, // 576px
       },
       colors: {
         'dark-blue': 'hsl(213, 19%, 18%)',
